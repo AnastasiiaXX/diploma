@@ -7,7 +7,7 @@ body {
   background-color: #f1f2f6;
   color: #333438; }
   body.landing {
-    background-image: url("../img/polygon.png");
+    background-image: url("../img/Polygon.png");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -413px; }
@@ -332,7 +332,7 @@ footer {
   width: 409px; }
 
 .page-footer__links {
-  width: 320px; }
+  width: 720px; }
 
 .links__list {
   list-style: none;
@@ -350,8 +350,9 @@ footer {
   font-size: 14px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
   width: 133px;
-  margin-right: 26px; }
+   }
   .links__item a {
     text-decoration: none;
     color: #ffffff; }
@@ -2086,9 +2087,10 @@ footer {
 .landing-top {
   font-family: "Myriad Pro", sans-serif;
   background-color: #ffffff;
-  background-image: url("../img/woman-wrench.png");
+  background-image: url("../img/house-top-icon-17750.jpg");
   background-repeat: no-repeat;
-  background-position: -125px 45px;
+  background-position: left center;
+  background-size: 320px auto;   /* 👈 ключевое */
   min-height: 374px;
   padding-left: 360px;
   padding-top: 45px;
