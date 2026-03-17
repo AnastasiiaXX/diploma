@@ -16,7 +16,7 @@ use yii\base\Model;
  * @property string $password
  * @property string $password_retype
  * @property bool $willRespond
- * 
+ * @property bool $consent
  */
 class SignUpForm extends Model
 {
@@ -26,6 +26,7 @@ class SignUpForm extends Model
     public $password;
     public $password_retype;
     public $willRespond;
+    public $consent;
 
     /**
    * @return array the validation rules.
@@ -56,7 +57,9 @@ class SignUpForm extends Model
               'compare',
               'compareAttribute' => 'password',
               'message' => 'Пароли не совпадают'],
-              [['willRespond'], 'boolean']
+              [['willRespond'], 'boolean'],
+              ['consent', 'required', 'requiredValue' => true,
+                  'message' => 'Необходимо согласие на обработку персональных данных']
           ];
     }
 

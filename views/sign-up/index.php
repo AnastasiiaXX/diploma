@@ -32,7 +32,12 @@ use yii\helpers\Html;
       </div>
 
         <?= $form->field($model, 'willRespond')
-          ->checkbox(['label' => 'я собираюсь откликаться на заказы']) ?>
+          ->checkbox(['label' => 'Я собираюсь откликаться на заказы']) ?>
+
+        <?= $form->field($model, 'consent')->checkbox([
+            'label' => 'Я согласен(а) с <a href="/site/privacy" target="_blank">политикой конфиденциальности</a> и даю согласие на обработку персональных данных',
+            'encode' => false,
+        ])->label(false) ?>
 
       <?=  Html::submitButton('Создать аккаунт', [
         'class' => 'button button--blue'
