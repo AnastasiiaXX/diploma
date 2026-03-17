@@ -9,8 +9,7 @@ use yii\helpers\ArrayHelper;
 $categoryItems = ArrayHelper::map($categories, 'id', 'title');
 ?>
 
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.9/dist/css/autoComplete.min.css">
+<link rel="stylesheet" href="/css/autoComplete.min.css">
 
 <main class="main-content main-content--center container">
   <div class="add-task-form regular-form">
@@ -64,7 +63,7 @@ $categoryItems = ArrayHelper::map($categories, 'id', 'title');
   </div>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.9/dist/autoComplete.min.js"></script>
+<script src="/js/autoComplete.min.js"></script>
 <script>
   function extractCity(label) {
     const parts = label.split(',').map(p => p.trim());

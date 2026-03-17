@@ -33,10 +33,10 @@ $user = Yii::$app->user->identity ?? null;
   <header class="page-header">
     <nav class="main-nav">
       <a href="<?= Yii::$app->user->isGuest
-                    ? Url::to(['landing'])
+                    ? Url::to(['/site/index'])
                     : Url::to(['tasks/index'])
         ?>" class="header-logo">
-        <img class="logo-image" src="/img/logotype.png" width="227" height="60" alt="taskforce">
+        <img class="logo-image" src="../img/logo-cropped.png" width="227" height="53" alt="taskforce">
       </a>
 
       <?php if (!Yii::$app->user->isGuest) : ?>

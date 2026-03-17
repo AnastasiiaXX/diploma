@@ -73,4 +73,9 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+
+    public function actionPrivacy()
+    {
+        return $this->render('privacy');
+    }
 }

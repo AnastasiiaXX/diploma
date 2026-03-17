@@ -7,7 +7,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>TaskForce</title>
+    <title>TaskMarket</title>
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/normalize.css') ?>">
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/landing.css') ?>">
 </head>

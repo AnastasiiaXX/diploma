@@ -64,7 +64,7 @@ $currentUserId = Yii::$app->user->isGuest ? null : (int)Yii::$app->user->id;
                 </div>
                 <p class="reviews"><?= $response->worker->getReviewsCount() ?> отзывов</p>
               </div>
-              <p class="response-message"><?= htmlspecialchars($response->comment) ?></p>
+              <p class="response-message"><?= Html::encode($response->comment ?? '') ?></p>
             </div>
             <div class="feedback-wrapper">
               <p class="info-text"><?= Yii::$app->formatter->asRelativeTime($response->date_add) ?></p>

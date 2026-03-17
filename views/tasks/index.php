@@ -55,6 +55,10 @@ use yii\widgets\ActiveForm;
         'linkOptions' => ['class' => 'link link--page'],
         'activePageCssClass' => 'pagination-item--active',
         'disabledPageCssClass' => 'mark',
+        'firstPageLabel' => false,
+        'lastPageLabel' => false,
+        'prevPageLabel' => false,
+        'nextPageLabel' => false,
     ]) ?>
   </div>
   <?php endif; ?>
